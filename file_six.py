@@ -1,17 +1,23 @@
-from typing import Union
-st_per : Union[int,float] =int(input("enter student percentage"))
-grade = ""
 
-if st_per >= 0 and st_per < 33:
-     grade="c"
-elif st_per >= 33 and st_per < 43:
-     grade="B"
-elif st_per >= 43 and st_per < 69:
-     grade="B+"
-elif st_per >= 69 and st_per < 80:
-     grade="A+" 
-elif st_per >= 80:
-     grade="A+"
-else:
-    grade="fail"
-print(f"Dear student your percentage is {st_per} and your grade is {grade}")
+#comparision operator
+a : int = 8
+b : int = 7
+print(a == b)
+#is
+x : str = "abc" 
+z: str = "abc" 
+print(id(x),id(z))
+# print(x is z)
+# use of in
+names : list[str] = [chr(i) for i in range(65,91)]
+print(names)
+print("D" in names)
+# user input
+
+names: list[str] = ['ali', 'hamza', 'abdul', 'hadi', 'azan', 'ali', 'adil']
+uinput = input("Enter your name: ")
+print(uinput in names)
+# * 
+data("ali",2,2.0)
+print(*data)
+print(x is z)

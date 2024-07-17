@@ -35,4 +35,4 @@ for abc in data.values():
 for k,v in data.items():
     print(k,v)
 #commprihinsive style
-{k:v for k,v in data.items()}
+{v:k for k,v in data.items()}

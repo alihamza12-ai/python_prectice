@@ -1,24 +1,17 @@
-names : list[str] = ["ali hamza","azan ali","abdul hadi","M.adil"]
-for name in names:
-    print(name)
-#list tuple
-data_base : list[tuple[str,str]] = [("ali hamza","1234"),
-                                    ("abdul hadi","5678"),
-                                    ("azan ali","90")]
-for row in data_base:
-    print(row)
+from typing import Union
+st_per : Union[int,float] =int(input("enter student percentage"))
+grade = ""
 
-#     #apply if statement
-    data_base : list[tuple[str,str]] = [("ali hamza","1234"),
-                                       ("abdul hadi","5678"),
-                                        ("azan ali","90")]
-    input_user = input("Enter your user")
-    input_password = input("Enter your password")
-for row in data_base:
-    user,password = row
-    if input_user ==user and input_password == password:
-     print(user,password)
-    # list comprehensive style
-    print([i**2 for i in range(0,11)])
-    for n in range(1,11):
-       print(f"{2} x {n} = {2*n}")
+if st_per >= 0 and st_per < 33:
+     grade="c"
+elif st_per >= 33 and st_per < 43:
+     grade="B"
+elif st_per >= 43 and st_per < 69:
+     grade="B+"
+elif st_per >= 69 and st_per < 80:
+     grade="A+" 
+elif st_per >= 80:
+     grade="A+"
+else:
+    grade="fail"
+print(f"Dear student your percentage is {st_per} and your grade is {grade}")

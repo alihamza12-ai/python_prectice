@@ -1,23 +1,24 @@
+names : list[str] = ["ali hamza","azan ali","abdul hadi","M.adil"]
+for name in names:
+    print(name)
+#list tuple
+data_base : list[tuple[str,str]] = [("ali hamza","1234"),
+                                    ("abdul hadi","5678"),
+                                    ("azan ali","90")]
+for row in data_base:
+    print(row)
 
-#comparision operator
-a : int = 8
-b : int = 7
-print(a == b)
-#is
-x : str = "abc" 
-z: str = "abc" 
-print(id(x),id(z))
-# print(x is z)
-# use of in
-names : list[str] = [chr(i) for i in range(65,91)]
-print(names)
-print("D" in names)
-# user input
-
-names: list[str] = ['ali', 'hamza', 'abdul', 'hadi', 'azan', 'ali', 'adil']
-uinput = input("Enter your name: ")
-print(uinput in names)
-# * used
-data("ali",2,2.0)
-print(*data)
-print(x is z)
+#     #apply if statement
+    data_base : list[tuple[str,str]] = [("ali hamza","1234"),
+                                       ("abdul hadi","5678"),
+                                        ("azan ali","90")]
+    input_user = input("Enter your user")
+    input_password = input("Enter your password")
+for row in data_base:
+    user,password = row
+    if input_user ==user and input_password == password:
+     print(user,password)
+    # list comprehensive style
+    print([i**2 for i in range(0,11)])
+    for n in range(1,11):
+       print(f"{2} x {n} = {2*n}")
