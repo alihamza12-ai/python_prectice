@@ -36,3 +36,9 @@ for k,v in data.items():
     print(k,v)
 #commprihinsive style
 {v:k for k,v in data.items()}
+print(data.items())
+#fromkeys function
+data : list[str] = ["id","name","fname"]
+boy : Dict[str,int] = {}
+print(data)
+print(boy.fromkeys(data))
