@@ -14,4 +14,4 @@ elif st_per >= 80:
      grade="A+"
 else:
     grade="fail"
-print(f"Dear student your percentage is {st_per} and your grade is {grade}")
+print(f"Dear student your percentage is a  {st_per} and your grade is {grade}")
